@@ -23,10 +23,8 @@ html,body {
 }
 
 body {
-	/* overflow-x: hidden; */
-	background: linear-gradient(45deg,#464646, #000000);
-	background-size: 150% 150%;
-	animation: color 3s ease-in-out infinite;
+	overflow-x: hidden;
+	background-color: var(--primary);
 }
 
 body.navbaractive {
@@ -202,9 +200,10 @@ body.navbaractive {
 }
 
 .tools {
-	display: block;
-	min-height: 10vh;
 	background-color: #ffffff;
+	width: auto;
+    height: auto;
+	border-radius: 10px;
 }
 
 .tools .container {
@@ -247,6 +246,7 @@ body.navbaractive {
 
 .tools .tools-t {
 	text-align: center;
+	font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
 	color: black;
     margin-top: 20px;
@@ -254,13 +254,13 @@ body.navbaractive {
 	font-weight: bold;
 }
 
-.tools .tools-t::after {
+/* .tools .tools-t::before {
 	content: "";
 	display: block;
-	border-bottom: 4px solid black;
-	width: 100px;
+	border-bottom: 5px solid black;
+	width: 200px;
 	margin: 0 auto;
-}
+} */
 
 .main3 {
 	display: block;
@@ -550,6 +550,19 @@ span.ripple {
 		display:block;
 	}
 
+	.loading {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		background-color: var(--primary);
+		z-index: 999999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.navs ul {
 		flex-direction: column;
 		position: fixed;
@@ -625,17 +638,5 @@ span.ripple {
 	}
 	100% {
 		transform: scale(1);
-	}
-}
-
-@keyframes color{
-	0%{
-		background-position: 0 50%;
-	}
-	50%{
-		background-position: 100% 50%;
-	}
-	100%{
-		background-position: 0 50%;
 	}
 }
