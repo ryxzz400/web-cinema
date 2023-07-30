@@ -244,24 +244,6 @@ body.navbaractive {
 	animation: shake 0.5s;
 }
 
-.tools .tools-t {
-	text-align: center;
-	font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-	color: black;
-    margin-top: 20px;
-	margin-bottom: 20px;
-	font-weight: bold;
-}
-
-/* .tools .tools-t::before {
-	content: "";
-	display: block;
-	border-bottom: 5px solid black;
-	width: 200px;
-	margin: 0 auto;
-} */
-
 .main3 {
 	display: block;
 	min-height: 100vh;
